@@ -80,7 +80,7 @@ const RegistrationSection = () => {
               {
                 icon: <PersonCheckIcon />,
                 title: "המטרה היא לבנות קבוצה הומוגנית",
-                description: "שבה כל ילד ירגיש שייך, שומר על הקצב – ויכול לפרוח"
+                description: "שבה ירגישו שייכים ויוכלו לפרוח"
               },
               {
                 icon: <ChatIcon />,
@@ -290,7 +290,16 @@ const RegistrationSection = () => {
               className="bg-gradient-to-br from-pastel-coral to-pastel-pink text-white rounded-4xl p-6 shadow-soft-lg border-2 border-pastel-coral/30 text-center hover:scale-105 transition-all duration-300"
             >
               <h4 className="text-2xl font-black mb-3">קבוצה 4</h4>
-              <p className="text-lg mb-4">מועד יולי</p>
+              <div className="text-sm mb-4 space-y-1">
+                <p className="font-semibold text-lg mb-2">מפגשים:</p>
+                <p>מפגש 1: 28.7</p>
+                <p>מפגש 2: 31.7</p>
+                <p>מפגש 3: 4.8</p>
+                <p>מפגש 4: 7.8</p>
+                <p>מפגש 5: 11.8</p>
+                <p>מפגש 6: 14.8</p>
+                <p className="font-semibold mt-2">שעה: 17:30</p>
+              </div>
               <p className="text-sm mb-4 opacity-90">5 ילדים בלבד</p>
               <button
                 onClick={handleSubmit}
@@ -365,103 +374,103 @@ ${registrationData.notes ? `הערות נוספות: ${registrationData.notes}` 
             }
           }} className="max-w-2xl mx-auto">
             <div className="space-y-6">
-              <div>
+                  <div>
                 <label className="block text-lg font-bold mb-2 text-darker">
                   שם ההורה
-                </label>
-                <input
-                  type="text"
-                  name="parentName"
-                  required
+                    </label>
+                    <input
+                      type="text"
+                      name="parentName"
+                      required
                   className="w-full px-4 py-3 rounded-2xl border-2 border-pastel-coral/30 focus:border-pastel-coral focus:outline-none text-lg"
                   placeholder="שם מלא"
-                />
-              </div>
-
-              <div>
+                    />
+                  </div>
+                  
+                  <div>
                 <label className="block text-lg font-bold mb-2 text-darker">
                   שם הילד/ה
-                </label>
-                <input
-                  type="text"
-                  name="childName"
-                  required
+                    </label>
+                    <input
+                      type="text"
+                      name="childName"
+                      required
                   className="w-full px-4 py-3 rounded-2xl border-2 border-pastel-coral/30 focus:border-pastel-coral focus:outline-none text-lg"
-                  placeholder="שם הילד/ה"
-                />
-              </div>
-
-              <div>
+                      placeholder="שם הילד/ה"
+                    />
+                  </div>
+                  
+                  <div>
                 <label className="block text-lg font-bold mb-2 text-darker">
                   גיל
-                </label>
-                <input
+                    </label>
+                    <input
                   type="number"
                   name="age"
-                  required
+                      required
                   min="10"
                   max="15"
                   className="w-full px-4 py-3 rounded-2xl border-2 border-pastel-coral/30 focus:border-pastel-coral focus:outline-none text-lg"
                   placeholder="גיל הילד/ה"
-                />
-              </div>
-
-              <div>
+                    />
+                  </div>
+                  
+                  <div>
                 <label className="block text-lg font-bold mb-2 text-darker">
                   טלפון
-                </label>
-                <input
-                  type="tel"
-                  name="phone"
-                  required
+                    </label>
+                    <input
+                      type="tel"
+                      name="phone"
+                      required
                   className="w-full px-4 py-3 rounded-2xl border-2 border-pastel-coral/30 focus:border-pastel-coral focus:outline-none text-lg"
                   placeholder="מספר טלפון"
-                />
-              </div>
-
-              <div>
+                    />
+                  </div>
+                  
+                  <div>
                 <label className="block text-lg font-bold mb-2 text-darker">
-                  הערות נוספות
-                </label>
-                <textarea
-                  name="notes"
-                  rows={4}
+                      הערות נוספות
+                    </label>
+                    <textarea
+                      name="notes"
+                      rows={4}
                   className="w-full px-4 py-3 rounded-2xl border-2 border-pastel-coral/30 focus:border-pastel-coral focus:outline-none text-lg resize-none"
                   placeholder="משהו שחשוב לכם שאדע על הילד/ה..."
-                />
-              </div>
-
+                    />
+                  </div>
+                  
               <div className="text-center">
-                <button
-                  type="submit"
+                    <button
+                      type="submit"
                   className="accent-button rounded-3xl text-xl px-8 py-4 transform hover:scale-105 transition-all duration-300 shadow-soft-lg"
                 >
                   שלח הרשמה מפורטת! 📝
-                </button>
+                    </button>
               </div>
-            </div>
+          </div>
           </form>
         </motion.div>
 
         {/* יצירת קשר */}
-        <motion.div
+          <motion.div
           initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
           transition={{ duration: 0.8 }}
           className="text-center"
-        >
+          >
           <h3 className="text-3xl md:text-4xl font-black mb-8 text-pastel-coral">
             יש שאלות? שלחו לי וואטסאפ 👇
           </h3>
-          <a
+            <a
             href="https://wa.me/972545886779"
-            target="_blank"
-            rel="noopener noreferrer"
+              target="_blank"
+              rel="noopener noreferrer"
             className="inline-block bg-gradient-to-br from-green-500 to-green-600 text-white py-4 px-8 rounded-3xl text-xl font-bold hover:shadow-soft-lg transform hover:scale-105 transition-all duration-300"
-          >
+            >
             📱 0545886779 - לחצו כאן לוואטסאפ
-          </a>
+            </a>
         </motion.div>
 
       </div>
