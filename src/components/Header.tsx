@@ -17,11 +17,11 @@ const Header = () => {
   }, [])
 
   const menuItems = [
-    { name: 'למה זה צריך?', href: '#על-המרתון' },
-    { name: 'מה זה GEN-Z', href: '#על-המרתון' },
-    { name: 'למי מתאים', href: '#למי-זה-מתאים' },
-    { name: 'מי אני', href: '#על-המורה' },
-    { name: 'פרטים', href: '#לוגיסטיקה' },
+    { name: 'על המרתון', href: '#על-המרתון' },
+    { name: 'מה נלמד', href: '#מה-נלמד' },
+    { name: 'למי זה מתאים', href: '#למי-זה-מתאים' },
+    { name: 'על המורה', href: '#על-המורה' },
+    { name: 'לוגיסטיקה', href: '#לוגיסטיקה' },
     { name: 'הרשמה', href: '#הרשמה' },
   ]
 
@@ -38,19 +38,14 @@ const Header = () => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled 
-          ? 'bg-white/95 backdrop-blur-md shadow-soft border-b border-pastel-pink/20' 
+          ? 'bg-white shadow-soft border-b border-pastel-pink/20' 
           : 'bg-transparent'
       }`}
     >
       <nav className="container-center py-4">
         <div className="flex items-center justify-between">
           {/* לוגו */}
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
-            className="flex items-center"
-          >
+          <div className="flex items-center">
             <div className="w-12 h-12 bg-gradient-to-br from-pastel-coral to-pastel-pink rounded-full flex items-center justify-center shadow-soft mr-3">
               <span className="text-white font-black text-xl">E</span>
             </div>
@@ -58,17 +53,12 @@ const Header = () => {
               <h1 className="font-black text-xl text-text-black">מרתון GEN-Z</h1>
               <p className="text-sm text-text-black/70">באנגלית</p>
         </div>
-          </motion.div>
+          </div>
 
           {/* ניווט למחשב */}
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="hidden lg:flex items-center space-x-8 space-x-reverse"
-          >
+          <div className="hidden lg:flex items-center space-x-8 space-x-reverse">
             {menuItems.map((item, index) => (
-              <motion.a
+              <a
                 key={item.name}
                 href={item.href}
                 onClick={(e) => {
@@ -76,23 +66,15 @@ const Header = () => {
                   handleMenuClick(item.href)
                 }}
                 className="text-text-black hover:text-pastel-coral transition-colors duration-300 font-semibold text-lg relative group"
-                initial={{ opacity: 0, y: -10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4, delay: 0.1 * index }}
                 >
                   {item.name}
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-pastel-coral transition-all duration-300 group-hover:w-full rounded-full"></span>
-              </motion.a>
+              </a>
             ))}
-          </motion.div>
+          </div>
 
           {/* כפתור וואטסאפ למחשב */}
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="hidden lg:block"
-          >
+          <div className="hidden lg:block">
             <a 
               href="https://wa.me/972545886779"
               target="_blank"
@@ -101,13 +83,10 @@ const Header = () => {
             >
               שאלות? וואטסאפ
             </a>
-          </motion.div>
+          </div>
 
           {/* המבורגר למובייל */}
-          <motion.button
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
+          <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="lg:hidden p-3 rounded-full bg-pastel-pink/10 hover:bg-pastel-pink/20 transition-colors duration-300"
             aria-label="פתח תפריט"
@@ -129,7 +108,7 @@ const Header = () => {
                 transition={{ duration: 0.3 }}
               />
             </div>
-          </motion.button>
+          </button>
       </div>
 
         {/* תפריט נייד */}
@@ -140,11 +119,11 @@ const Header = () => {
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.3 }}
-              className="lg:hidden overflow-hidden bg-gradient-to-br from-pastel-yellow/20 to-pastel-mint/20 rounded-5xl mt-4 backdrop-blur-sm border border-pastel-pink/20"
+              className="lg:hidden overflow-hidden bg-white/95 rounded-5xl mt-4 border border-pastel-pink/20 shadow-soft"
             >
               <div className="p-6 space-y-4">
                 {menuItems.map((item, index) => (
-                  <motion.a
+                  <a
                     key={item.name}
                     href={item.href}
                     onClick={(e) => {
@@ -152,20 +131,12 @@ const Header = () => {
                       handleMenuClick(item.href)
                     }}
                     className="block text-text-black hover:text-pastel-coral transition-colors duration-300 font-semibold text-lg py-2 border-b border-pastel-pink/10 last:border-b-0"
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.3, delay: 0.1 * index }}
                   >
                     {item.name}
-                  </motion.a>
+                  </a>
                 ))}
                 
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.3, delay: 0.4 }}
-                  className="pt-4"
-                >
+                <div className="pt-4">
                   <a 
                     href="https://wa.me/972545886779"
         target="_blank"
@@ -174,7 +145,7 @@ const Header = () => {
                   >
                     שאלות? וואטסאפ
                   </a>
-                </motion.div>
+                </div>
               </div>
             </motion.div>
           )}

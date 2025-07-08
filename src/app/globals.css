@@ -32,6 +32,12 @@
   --warm-yellow: #F6AD55;      /* Darker yellow for highlights */
 }
 
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+}
+
 body {
   background-color: var(--warm-white);
   color: var(--text-black);
@@ -51,6 +57,12 @@ body {
 
 /* מניעת ריצוד בגלילה במובייל */
 @media (max-width: 768px) {
+  /* מניעת גלילה צידית */
+  * {
+    max-width: 100vw;
+    box-sizing: border-box;
+  }
+  
   [data-motion] {
     transform: translateZ(0);
     will-change: transform, opacity;
@@ -62,6 +74,12 @@ body {
     animation-delay: 0.01ms !important;
     transition-duration: 0.01ms !important;
     transition-delay: 0.01ms !important;
+  }
+  
+  /* שיפורים נוספים לביצועים */
+  * {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
   }
 }
 

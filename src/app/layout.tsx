@@ -20,27 +20,9 @@ export default function RootLayout({
         {children}
         <script dangerouslySetInnerHTML={{
           __html: `
-            // מניעת ריצוד בגלילה במובייל
-            if (window.innerWidth <= 768) {
-              let scrollTimer = null;
-              let isScrolling = false;
-              
-              function handleScroll() {
-                if (!isScrolling) {
-                  document.body.classList.add('scrolling');
-                  isScrolling = true;
-                }
-                
-                clearTimeout(scrollTimer);
-                scrollTimer = setTimeout(() => {
-                  document.body.classList.remove('scrolling');
-                  isScrolling = false;
-                }, 150);
-              }
-              
-              window.addEventListener('scroll', handleScroll, { passive: true });
-              window.addEventListener('touchmove', handleScroll, { passive: true });
-            }
+            // מניעת גלילה צידית
+            document.documentElement.style.overflowX = 'hidden';
+            document.body.style.overflowX = 'hidden';
           `
         }} />
       </body>
