@@ -63,48 +63,78 @@ const RegistrationSection = () => {
           </p>
         </motion.div>
 
-        {/* תהליך ההרשמה */}
-        <div className="max-w-6xl mx-auto mb-24">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              {
-                icon: <FormIcon />,
-                title: "ממלאים טופס הרשמה קצר",
-                description: "בו אני יוצרת עימכם קשר ועונה על שאלות. במידה ומעוניינים תקבלו לינק לתשלום"
-              },
-              {
-                icon: <BookUserIcon />,
-                title: "מקבלים שאלון הכרות קצר",
-                description: "שבו אוכל להבין איפה הילדים שלכם עומדים, מה הם צריכים וכיצד נוכל לדייק עבורם את המרתון"
-              },
-              {
-                icon: <PersonCheckIcon />,
-                title: "המטרה היא לבנות קבוצה הומוגנית",
-                description: "בה כל אחד ואחת יוכלו להרגיש שייכים, לשמור על קצב ולפרוח"
-              },
-              {
-                icon: <ChatIcon />,
-                title: "הכיף מתחיל!",
-                description: "הכיף מתחיל! תקבלו תוכנית למרתון מה נעשה בכל אחד מהמפגשים וכל משתתף יקבל ממני הודעה אישית שבה אציג את עצמי, עדכון על מה מצפה להם ובקשות מיוחדות שלהם אליי במידה ויש. נתראה, המפגש הראשון ב28.7"
-              }
-            ].map((step, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="bg-white/80 backdrop-blur-sm rounded-4xl p-6 shadow-soft text-center border-2 border-pastel-coral/20 hover:border-pastel-coral/40 transition-all duration-300"
-              >
-                <div className="w-16 h-16 bg-pastel-coral/20 rounded-full mx-auto mb-4 flex items-center justify-center">
-                  {step.icon}
-                </div>
-                <h3 className="text-lg font-bold mb-3 text-darker">{step.title}</h3>
-                {step.description && (
-                  <p className="text-sm text-medium leading-relaxed">{step.description}</p>
-                )}
-              </motion.div>
-            ))}
+        {/* תהליך ההרשמה - ציר זמן */}
+        <div className="max-w-4xl mx-auto mb-24">
+          <div className="relative">
+            {/* הקו המרכזי של ציר הזמן */}
+            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-gradient-to-b from-pastel-coral to-pastel-pink h-full rounded-full"></div>
+            
+            <div className="space-y-16">
+              {[
+                {
+                  icon: <FormIcon />,
+                  title: "שלב 1: ממלאים טופס הרשמה קצר",
+                  description: "בו אני יוצרת עימכם קשר ועונה על שאלות. במידה ומעוניינים תקבלו לינק לתשלום",
+                  side: "right"
+                },
+                {
+                  icon: <BookUserIcon />,
+                  title: "שלב 2: מקבלים שאלון הכרות קצר",
+                  description: "שבו אוכל להבין איפה הילדים שלכם עומדים, מה הם צריכים וכיצד נוכל לדייק עבורם את המרתון",
+                  side: "left"
+                },
+                {
+                  icon: <PersonCheckIcon />,
+                  title: "שלב 3: בניית קבוצה הומוגנית",
+                  description: "בה כל אחד ואחת יוכלו להרגיש שייכים, לשמור על קצב ולפרוח",
+                  side: "right"
+                },
+                {
+                  icon: <ChatIcon />,
+                  title: "שלב 4: הכיף מתחיל!",
+                  description: "תקבלו תוכנית למרתון מה נעשה בכל אחד מהמפגשים וכל משתתף יקבל ממני הודעה אישית שבה אציג את עצמי, עדכון על מה מצפה להם ובקשות מיוחדות שלהם אליי במידה ויש. נתראה, המפגש הראשון ב28.7",
+                  side: "left"
+                }
+              ].map((step, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, x: step.side === "right" ? 100 : -100 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.8, delay: index * 0.2 }}
+                  className={`relative flex items-center ${step.side === "right" ? "justify-start" : "justify-end"}`}
+                >
+                  {/* נקודת הציר */}
+                  <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-pastel-coral rounded-full border-4 border-white shadow-lg z-10 flex items-center justify-center">
+                    <span className="text-white font-bold text-xs">{index + 1}</span>
+                  </div>
+                  
+                  {/* התוכן */}
+                  <div className={`w-5/12 ${step.side === "right" ? "mr-auto pl-8" : "ml-auto pr-8"}`}>
+                    <div className="bg-white/90 backdrop-blur-sm rounded-3xl p-6 shadow-soft border-2 border-pastel-coral/20 hover:border-pastel-coral/40 transition-all duration-300 hover:scale-105">
+                      <div className={`flex items-center gap-4 mb-4 ${step.side === "left" ? "flex-row-reverse" : ""}`}>
+                        <div className="w-12 h-12 bg-pastel-coral/20 rounded-full flex items-center justify-center flex-shrink-0">
+                          {step.icon}
+                        </div>
+                        <h3 className="text-lg font-bold text-darker">{step.title}</h3>
+                      </div>
+                      <p className={`text-medium leading-relaxed ${step.side === "left" ? "text-right" : "text-left"}`}>
+                        {step.description}
+                      </p>
+                    </div>
+                    
+                    {/* חץ מחבר */}
+                    {index < 3 && (
+                      <div className={`flex ${step.side === "right" ? "justify-start pl-8" : "justify-end pr-8"} mt-4`}>
+                        <div className="text-pastel-coral text-2xl">
+                          ↓
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                </motion.div>
+              ))}
+            </div>
           </div>
         </div>
 
