@@ -290,15 +290,38 @@ const RegistrationSection = () => {
               className="bg-gradient-to-br from-pastel-coral to-pastel-pink text-white rounded-4xl p-6 shadow-soft-lg border-2 border-pastel-coral/30 text-center hover:scale-105 transition-all duration-300"
             >
               <h4 className="text-2xl font-black mb-3">קבוצה 4</h4>
-              <div className="text-sm mb-4 space-y-1">
-                <p className="font-semibold text-lg mb-2">מפגשים:</p>
-                <p>מפגש 1: 28.7</p>
-                <p>מפגש 2: 31.7</p>
-                <p>מפגש 3: 4.8</p>
-                <p>מפגש 4: 7.8</p>
-                <p>מפגש 5: 11.8</p>
-                <p>מפגש 6: 14.8</p>
-                <p className="font-semibold mt-2">שעה: 17:30</p>
+              <div className="mb-4">
+                <p className="font-semibold text-lg mb-3">📅 מפגשים</p>
+                <div className="grid grid-cols-2 gap-2 mb-3">
+                  <div className="bg-white/20 backdrop-blur-sm rounded-lg p-2 text-center border border-white/30">
+                    <div className="text-xs opacity-80">מפגש 1</div>
+                    <div className="font-bold">28.7</div>
+                  </div>
+                  <div className="bg-white/20 backdrop-blur-sm rounded-lg p-2 text-center border border-white/30">
+                    <div className="text-xs opacity-80">מפגש 2</div>
+                    <div className="font-bold">31.7</div>
+                  </div>
+                  <div className="bg-white/20 backdrop-blur-sm rounded-lg p-2 text-center border border-white/30">
+                    <div className="text-xs opacity-80">מפגש 3</div>
+                    <div className="font-bold">4.8</div>
+                  </div>
+                  <div className="bg-white/20 backdrop-blur-sm rounded-lg p-2 text-center border border-white/30">
+                    <div className="text-xs opacity-80">מפגש 4</div>
+                    <div className="font-bold">7.8</div>
+                  </div>
+                  <div className="bg-white/20 backdrop-blur-sm rounded-lg p-2 text-center border border-white/30">
+                    <div className="text-xs opacity-80">מפגש 5</div>
+                    <div className="font-bold">11.8</div>
+                  </div>
+                  <div className="bg-white/20 backdrop-blur-sm rounded-lg p-2 text-center border border-white/30">
+                    <div className="text-xs opacity-80">מפגש 6</div>
+                    <div className="font-bold">14.8</div>
+                  </div>
+                </div>
+                <div className="bg-white/30 backdrop-blur-sm rounded-lg p-2 text-center border border-white/40">
+                  <span className="text-sm">🕕 שעה: </span>
+                  <span className="font-bold text-lg">17:30</span>
+                </div>
               </div>
               <p className="text-sm mb-4 opacity-90">5 ילדים בלבד</p>
               <button
