@@ -63,78 +63,62 @@ const RegistrationSection = () => {
           </p>
         </motion.div>
 
-        {/* תהליך ההרשמה - ציר זמן */}
+        {/* תהליך ההרשמה - גריד שלבים */}
         <div className="max-w-4xl mx-auto mb-24">
-          <div className="relative">
-            {/* הקו המרכזי של ציר הזמן */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-gradient-to-b from-pastel-coral to-pastel-pink h-full rounded-full"></div>
-            
-            <div className="space-y-16">
-              {[
-                {
-                  icon: <FormIcon />,
-                  title: "שלב 1: ממלאים טופס הרשמה קצר",
-                  description: "בו אני יוצרת עימכם קשר ועונה על שאלות. במידה ומעוניינים תקבלו לינק לתשלום",
-                  side: "right"
-                },
-                {
-                  icon: <BookUserIcon />,
-                  title: "שלב 2: מקבלים שאלון הכרות קצר",
-                  description: "שבו אוכל להבין איפה הילדים שלכם עומדים, מה הם צריכים וכיצד נוכל לדייק עבורם את המרתון",
-                  side: "left"
-                },
-                {
-                  icon: <PersonCheckIcon />,
-                  title: "שלב 3: בניית קבוצה הומוגנית",
-                  description: "בה כל אחד ואחת יוכלו להרגיש שייכים, לשמור על קצב ולפרוח",
-                  side: "right"
-                },
-                {
-                  icon: <ChatIcon />,
-                  title: "שלב 4: הכיף מתחיל!",
-                  description: "תקבלו תוכנית למרתון מה נעשה בכל אחד מהמפגשים וכל משתתף יקבל ממני הודעה אישית שבה אציג את עצמי, עדכון על מה מצפה להם ובקשות מיוחדות שלהם אליי במידה ויש. נתראה, המפגש הראשון ב28.7",
-                  side: "left"
-                }
-              ].map((step, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, x: step.side === "right" ? 100 : -100 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.8, delay: index * 0.2 }}
-                  className={`relative flex items-center ${step.side === "right" ? "justify-start" : "justify-end"}`}
-                >
-                  {/* נקודת הציר */}
-                  <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-pastel-coral rounded-full border-4 border-white shadow-lg z-10 flex items-center justify-center">
-                    <span className="text-white font-bold text-xs">{index + 1}</span>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {[
+              {
+                icon: <FormIcon />,
+                number: "1",
+                title: "טופס הרשמה קצר",
+                description: "יוצרת עימכם קשר ועונה על שאלות. במידה ומעוניינים תקבלו לינק לתשלום"
+              },
+              {
+                icon: <BookUserIcon />,
+                number: "2", 
+                title: "שאלון הכרות קצר",
+                description: "אבין איפה הילדים עומדים ואיך לדייק עבורם את המרתון"
+              },
+              {
+                icon: <PersonCheckIcon />,
+                number: "3",
+                title: "בניית קבוצה הומוגנית", 
+                description: "כל אחד ואחת יוכלו להרגיש שייכים ולפרוח"
+              },
+              {
+                icon: <ChatIcon />,
+                number: "4",
+                title: "הכיף מתחיל!",
+                description: "תוכנית מפורטת למרתון והודעה אישית עם הצגה עצמית. נתראה ב-28.7!"
+              }
+            ].map((step, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                className="bg-white/90 backdrop-blur-sm rounded-3xl p-6 shadow-soft border-2 border-pastel-coral/20 hover:border-pastel-coral/40 transition-all duration-300 hover:scale-105"
+              >
+                {/* מספר השלב */}
+                <div className="w-10 h-10 bg-pastel-coral rounded-full flex items-center justify-center mb-4">
+                  <span className="text-white font-bold text-lg">{step.number}</span>
+                </div>
+                
+                {/* אייקון וכותרת */}
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-8 h-8 bg-pastel-coral/20 rounded-full flex items-center justify-center flex-shrink-0">
+                    {step.icon}
                   </div>
-                  
-                  {/* התוכן */}
-                  <div className={`w-5/12 ${step.side === "right" ? "mr-auto pl-8" : "ml-auto pr-8"}`}>
-                    <div className="bg-white/90 backdrop-blur-sm rounded-3xl p-6 shadow-soft border-2 border-pastel-coral/20 hover:border-pastel-coral/40 transition-all duration-300 hover:scale-105">
-                      <div className={`flex items-center gap-4 mb-4 ${step.side === "left" ? "flex-row-reverse" : ""}`}>
-                        <div className="w-12 h-12 bg-pastel-coral/20 rounded-full flex items-center justify-center flex-shrink-0">
-                          {step.icon}
-                        </div>
-                        <h3 className="text-lg font-bold text-darker">{step.title}</h3>
-                      </div>
-                      <p className={`text-medium leading-relaxed ${step.side === "left" ? "text-right" : "text-left"}`}>
-                        {step.description}
-                      </p>
-                    </div>
-                    
-                    {/* חץ מחבר */}
-                    {index < 3 && (
-                      <div className={`flex ${step.side === "right" ? "justify-start pl-8" : "justify-end pr-8"} mt-4`}>
-                        <div className="text-pastel-coral text-2xl">
-                          ↓
-                        </div>
-                      </div>
-                    )}
-                  </div>
-                </motion.div>
-              ))}
-            </div>
+                  <h3 className="text-lg font-bold text-darker">{step.title}</h3>
+                </div>
+                
+                {/* תיאור */}
+                <p className="text-medium leading-relaxed text-right">
+                  {step.description}
+                </p>
+              </motion.div>
+            ))}
           </div>
         </div>
 
@@ -229,16 +213,15 @@ const RegistrationSection = () => {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="bg-gradient-to-br from-gray-400 to-gray-500 text-white rounded-4xl p-6 shadow-soft-lg border-2 border-gray-300 text-center relative overflow-hidden"
             >
-              {/* סרט מלוכסן "קבוצה מלאה" */}
+              {/* סרט מלוכסן "מלאה" */}
               <div className="absolute -top-1 -right-1 -bottom-1 -left-1 flex items-center justify-center pointer-events-none">
                 <div className="bg-red-600 text-white text-xl font-black py-3 px-16 transform rotate-45 shadow-lg">
-                  קבוצה מלאה
+                  מלאה
                 </div>
               </div>
               
-              <h4 className="text-2xl font-black mb-8 opacity-50">קבוצה 1</h4>
-              <p className="text-lg opacity-50">התקיימה במאי</p>
-              <p className="text-sm opacity-50 mt-4">6 ילדים השתתפו</p>
+              <h4 className="text-2xl font-black mb-4 opacity-50">קבוצה 1</h4>
+              <p className="text-lg opacity-50">מועד יולי</p>
             </motion.div>
 
             {/* קבוצה 2 - מלאה */}
@@ -249,16 +232,15 @@ const RegistrationSection = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="bg-gradient-to-br from-gray-400 to-gray-500 text-white rounded-4xl p-6 shadow-soft-lg border-2 border-gray-300 text-center relative overflow-hidden"
             >
-              {/* סרט מלוכסן "קבוצה מלאה" */}
+              {/* סרט מלוכסן "מלאה" */}
               <div className="absolute -top-1 -right-1 -bottom-1 -left-1 flex items-center justify-center pointer-events-none">
                 <div className="bg-red-600 text-white text-xl font-black py-3 px-16 transform rotate-45 shadow-lg">
-                  קבוצה מלאה
+                  מלאה
                 </div>
               </div>
               
-              <h4 className="text-2xl font-black mb-8 opacity-50">קבוצה 2</h4>
-              <p className="text-lg opacity-50">התקיימה במאי-יוני</p>
-              <p className="text-sm opacity-50 mt-4">5 ילדים השתתפו</p>
+              <h4 className="text-2xl font-black mb-4 opacity-50">קבוצה 2</h4>
+              <p className="text-lg opacity-50">מועד יולי</p>
             </motion.div>
 
             {/* קבוצה 3 - מלאה */}
@@ -269,16 +251,15 @@ const RegistrationSection = () => {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="bg-gradient-to-br from-gray-400 to-gray-500 text-white rounded-4xl p-6 shadow-soft-lg border-2 border-gray-300 text-center relative overflow-hidden"
             >
-              {/* סרט מלוכסן "קבוצה מלאה" */}
+              {/* סרט מלוכסן "מלאה" */}
               <div className="absolute -top-1 -right-1 -bottom-1 -left-1 flex items-center justify-center pointer-events-none">
                 <div className="bg-red-600 text-white text-xl font-black py-3 px-16 transform rotate-45 shadow-lg">
-                  קבוצה מלאה
+                  מלאה
                 </div>
               </div>
               
-              <h4 className="text-2xl font-black mb-8 opacity-50">קבוצה 3</h4>
-              <p className="text-lg opacity-50">התקיימה ביוני-יולי</p>
-              <p className="text-sm opacity-50 mt-4">6 ילדים השתתפו</p>
+              <h4 className="text-2xl font-black mb-4 opacity-50">קבוצה 3</h4>
+              <p className="text-lg opacity-50">מועד יולי</p>
             </motion.div>
 
             {/* קבוצה 4 - פתוחה להרשמה */}
