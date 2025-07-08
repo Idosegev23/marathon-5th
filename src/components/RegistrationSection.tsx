@@ -197,28 +197,50 @@ const RegistrationSection = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="relative bg-white/60 backdrop-blur-sm rounded-4xl p-6 shadow-soft border-2 border-gray-300/50 text-center"
+              className="bg-gradient-to-br from-gray-400 to-gray-500 text-white rounded-4xl p-6 shadow-soft-lg border-2 border-gray-300 text-center relative overflow-hidden"
             >
-              {/* קו מחיקה */}
-              <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                <svg className="w-full h-full absolute" viewBox="0 0 200 150" fill="none">
-                  <path 
-                    d="M20 75 Q100 65 180 85" 
-                    stroke="#e11d48" 
-                    strokeWidth="4" 
-                    strokeLinecap="round"
-                    opacity="0.8"
-                  />
-                </svg>
-              </div>
-              
-              <div className="opacity-60">
-                <h4 className="text-2xl font-black mb-3 text-darker">קבוצה 1</h4>
-                <p className="text-lg text-medium mb-4">יוני 2024</p>
-                <div className="bg-red-100 text-red-600 py-2 px-4 rounded-full text-lg font-bold">
-                  מלאה
+              {/* סטטוס מלאה */}
+              <div className="absolute top-3 right-3">
+                <div className="bg-red-500 text-white px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1">
+                  ✓ מלאה
                 </div>
               </div>
+              
+              <h4 className="text-2xl font-black mb-3">קבוצה 1</h4>
+              <div className="mb-4">
+                <p className="font-semibold text-lg mb-3">📅 התקיים:</p>
+                <div className="grid grid-cols-2 gap-2 mb-3">
+                  <div className="bg-white/20 backdrop-blur-sm rounded-lg p-2 text-center border border-white/30">
+                    <div className="text-xs opacity-80">מפגש 1</div>
+                    <div className="font-bold">2.6</div>
+                  </div>
+                  <div className="bg-white/20 backdrop-blur-sm rounded-lg p-2 text-center border border-white/30">
+                    <div className="text-xs opacity-80">מפגש 2</div>
+                    <div className="font-bold">5.6</div>
+                  </div>
+                  <div className="bg-white/20 backdrop-blur-sm rounded-lg p-2 text-center border border-white/30">
+                    <div className="text-xs opacity-80">מפגש 3</div>
+                    <div className="font-bold">9.6</div>
+                  </div>
+                  <div className="bg-white/20 backdrop-blur-sm rounded-lg p-2 text-center border border-white/30">
+                    <div className="text-xs opacity-80">מפגש 4</div>
+                    <div className="font-bold">12.6</div>
+                  </div>
+                  <div className="bg-white/20 backdrop-blur-sm rounded-lg p-2 text-center border border-white/30">
+                    <div className="text-xs opacity-80">מפגש 5</div>
+                    <div className="font-bold">16.6</div>
+                  </div>
+                  <div className="bg-white/20 backdrop-blur-sm rounded-lg p-2 text-center border border-white/30">
+                    <div className="text-xs opacity-80">מפגש 6</div>
+                    <div className="font-bold">19.6</div>
+                  </div>
+                </div>
+                <div className="bg-white/30 backdrop-blur-sm rounded-lg p-2 text-center border border-white/40">
+                  <span className="text-sm">🕕 שעה: </span>
+                  <span className="font-bold text-lg">17:30</span>
+                </div>
+              </div>
+              <p className="text-sm opacity-90">6 ילדים השתתפו</p>
             </motion.div>
 
             {/* קבוצה 2 - מלאה */}
@@ -227,28 +249,50 @@ const RegistrationSection = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="relative bg-white/60 backdrop-blur-sm rounded-4xl p-6 shadow-soft border-2 border-gray-300/50 text-center"
+              className="bg-gradient-to-br from-gray-400 to-gray-500 text-white rounded-4xl p-6 shadow-soft-lg border-2 border-gray-300 text-center relative overflow-hidden"
             >
-              {/* קו מחיקה */}
-              <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                <svg className="w-full h-full absolute" viewBox="0 0 200 150" fill="none">
-                  <path 
-                    d="M25 80 Q95 70 175 75" 
-                    stroke="#e11d48" 
-                    strokeWidth="4" 
-                    strokeLinecap="round"
-                    opacity="0.8"
-                  />
-                </svg>
-              </div>
-              
-              <div className="opacity-60">
-                <h4 className="text-2xl font-black mb-3 text-darker">קבוצה 2</h4>
-                <p className="text-lg text-medium mb-4">יוני 2024</p>
-                <div className="bg-red-100 text-red-600 py-2 px-4 rounded-full text-lg font-bold">
-                  מלאה
+              {/* סטטוס מלאה */}
+              <div className="absolute top-3 right-3">
+                <div className="bg-red-500 text-white px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1">
+                  ✓ מלאה
                 </div>
               </div>
+              
+              <h4 className="text-2xl font-black mb-3">קבוצה 2</h4>
+              <div className="mb-4">
+                <p className="font-semibold text-lg mb-3">📅 התקיים:</p>
+                <div className="grid grid-cols-2 gap-2 mb-3">
+                  <div className="bg-white/20 backdrop-blur-sm rounded-lg p-2 text-center border border-white/30">
+                    <div className="text-xs opacity-80">מפגש 1</div>
+                    <div className="font-bold">23.6</div>
+                  </div>
+                  <div className="bg-white/20 backdrop-blur-sm rounded-lg p-2 text-center border border-white/30">
+                    <div className="text-xs opacity-80">מפגש 2</div>
+                    <div className="font-bold">26.6</div>
+                  </div>
+                  <div className="bg-white/20 backdrop-blur-sm rounded-lg p-2 text-center border border-white/30">
+                    <div className="text-xs opacity-80">מפגש 3</div>
+                    <div className="font-bold">30.6</div>
+                  </div>
+                  <div className="bg-white/20 backdrop-blur-sm rounded-lg p-2 text-center border border-white/30">
+                    <div className="text-xs opacity-80">מפגש 4</div>
+                    <div className="font-bold">3.7</div>
+                  </div>
+                  <div className="bg-white/20 backdrop-blur-sm rounded-lg p-2 text-center border border-white/30">
+                    <div className="text-xs opacity-80">מפגש 5</div>
+                    <div className="font-bold">7.7</div>
+                  </div>
+                  <div className="bg-white/20 backdrop-blur-sm rounded-lg p-2 text-center border border-white/30">
+                    <div className="text-xs opacity-80">מפגש 6</div>
+                    <div className="font-bold">10.7</div>
+                  </div>
+                </div>
+                <div className="bg-white/30 backdrop-blur-sm rounded-lg p-2 text-center border border-white/40">
+                  <span className="text-sm">🕕 שעה: </span>
+                  <span className="font-bold text-lg">17:30</span>
+                </div>
+              </div>
+              <p className="text-sm opacity-90">5 ילדים השתתפו</p>
             </motion.div>
 
             {/* קבוצה 3 - מלאה */}
@@ -257,28 +301,50 @@ const RegistrationSection = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="relative bg-white/60 backdrop-blur-sm rounded-4xl p-6 shadow-soft border-2 border-gray-300/50 text-center"
+              className="bg-gradient-to-br from-gray-400 to-gray-500 text-white rounded-4xl p-6 shadow-soft-lg border-2 border-gray-300 text-center relative overflow-hidden"
             >
-              {/* קו מחיקה */}
-              <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                <svg className="w-full h-full absolute" viewBox="0 0 200 150" fill="none">
-                  <path 
-                    d="M15 70 Q105 85 185 75" 
-                    stroke="#e11d48" 
-                    strokeWidth="4" 
-                    strokeLinecap="round"
-                    opacity="0.8"
-                  />
-                </svg>
-              </div>
-              
-              <div className="opacity-60">
-                <h4 className="text-2xl font-black mb-3 text-darker">קבוצה 3</h4>
-                <p className="text-lg text-medium mb-4">יוני 2024</p>
-                <div className="bg-red-100 text-red-600 py-2 px-4 rounded-full text-lg font-bold">
-                  מלאה
+              {/* סטטוס מלאה */}
+              <div className="absolute top-3 right-3">
+                <div className="bg-red-500 text-white px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1">
+                  ✓ מלאה
                 </div>
               </div>
+              
+              <h4 className="text-2xl font-black mb-3">קבוצה 3</h4>
+              <div className="mb-4">
+                <p className="font-semibold text-lg mb-3">📅 התקיים:</p>
+                <div className="grid grid-cols-2 gap-2 mb-3">
+                  <div className="bg-white/20 backdrop-blur-sm rounded-lg p-2 text-center border border-white/30">
+                    <div className="text-xs opacity-80">מפגש 1</div>
+                    <div className="font-bold">14.7</div>
+                  </div>
+                  <div className="bg-white/20 backdrop-blur-sm rounded-lg p-2 text-center border border-white/30">
+                    <div className="text-xs opacity-80">מפגש 2</div>
+                    <div className="font-bold">17.7</div>
+                  </div>
+                  <div className="bg-white/20 backdrop-blur-sm rounded-lg p-2 text-center border border-white/30">
+                    <div className="text-xs opacity-80">מפגש 3</div>
+                    <div className="font-bold">21.7</div>
+                  </div>
+                  <div className="bg-white/20 backdrop-blur-sm rounded-lg p-2 text-center border border-white/30">
+                    <div className="text-xs opacity-80">מפגש 4</div>
+                    <div className="font-bold">24.7</div>
+                  </div>
+                  <div className="bg-white/20 backdrop-blur-sm rounded-lg p-2 text-center border border-white/30">
+                    <div className="text-xs opacity-80">מפגש 5</div>
+                    <div className="font-bold">28.7</div>
+                  </div>
+                  <div className="bg-white/20 backdrop-blur-sm rounded-lg p-2 text-center border border-white/30">
+                    <div className="text-xs opacity-80">מפגש 6</div>
+                    <div className="font-bold">31.7</div>
+                  </div>
+                </div>
+                <div className="bg-white/30 backdrop-blur-sm rounded-lg p-2 text-center border border-white/40">
+                  <span className="text-sm">🕕 שעה: </span>
+                  <span className="font-bold text-lg">17:30</span>
+                </div>
+              </div>
+              <p className="text-sm opacity-90">6 ילדים השתתפו</p>
             </motion.div>
 
             {/* קבוצה 4 - פתוחה להרשמה */}
