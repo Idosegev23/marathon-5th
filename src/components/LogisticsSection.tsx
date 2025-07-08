@@ -100,7 +100,7 @@ const LogisticsSection = () => {
             איפה, מתי וכמה?
           </h2>
         </motion.div>
-
+          
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-wrap justify-center gap-8">
             {logisticsData.map((item, index) => (
@@ -126,7 +126,7 @@ const LogisticsSection = () => {
               </motion.div>
             ))}
           </div>
-        </div>
+          </div>
       </div>
     </section>
   );
