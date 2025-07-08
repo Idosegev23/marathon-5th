@@ -70,22 +70,22 @@ const RegistrationSection = () => {
               {
                 icon: <FormIcon />,
                 title: "ממלאים טופס הרשמה קצר",
-                description: ""
+                description: "בו אני יוצרת עימכם קשר ועונה על שאלות. במידה ומעוניינים תקבלו לינק לתשלום"
               },
               {
                 icon: <BookUserIcon />,
                 title: "מקבלים שאלון הכרות קצר",
-                description: "על הילד/ה – כדי להבין איפה הוא עומד, מה הוא צריך, ואיך נוכל לדייק לו את הקבוצה"
+                description: "שבו אוכל להבין איפה הילדים שלכם עומדים, מה הם צריכים וכיצד נוכל לדייק עבורם את המרתון"
               },
               {
                 icon: <PersonCheckIcon />,
                 title: "המטרה היא לבנות קבוצה הומוגנית",
-                description: "שבה ירגישו שייכים ויוכלו לפרוח"
+                description: "בה כל אחד ואחת יוכלו להרגיש שייכים, לשמור על קצב ולפרוח"
               },
               {
                 icon: <ChatIcon />,
-                title: "אחרי שהשאלון חוזר",
-                description: "אני יוצרת קשר אישי, עונה על שאלות, ומצרפת אתכם לקבוצה המתאימה ביותר"
+                title: "הכיף מתחיל!",
+                description: "הכיף מתחיל! תקבלו תוכנית למרתון מה נעשה בכל אחד מהמפגשים וכל משתתף יקבל ממני הודעה אישית שבה אציג את עצמי, עדכון על מה מצפה להם ובקשות מיוחדות שלהם אליי במידה ויש. נתראה, המפגש הראשון ב28.7"
               }
             ].map((step, index) => (
               <motion.div
@@ -161,7 +161,7 @@ const RegistrationSection = () => {
               "משוב אישי על ההתקדמות של הילד/ה לאורך המפגשים",
               "נקודות חוזק שבלטו",
               "המלצות אישיות להמשך חיזוק",
-              "הכל בגובה העיניים, עם מטרה אחת: שהשיח על אנגלית בבית יהיה חיובי, בטוח ומחובר למציאות של הילד"
+              "הכל בגובה העיניים, עם מטרה אחת: שהשיח על אנגלית בבית יהיה חיובי, בטוח ומחובר למציאות."
             ].map((benefit, index) => (
               <motion.div
                 key={index}
@@ -199,48 +199,16 @@ const RegistrationSection = () => {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="bg-gradient-to-br from-gray-400 to-gray-500 text-white rounded-4xl p-6 shadow-soft-lg border-2 border-gray-300 text-center relative overflow-hidden"
             >
-              {/* סטטוס מלאה */}
-              <div className="absolute top-3 right-3">
-                <div className="bg-red-500 text-white px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1">
-                  ✓ מלאה
+              {/* סרט מלוכסן "קבוצה מלאה" */}
+              <div className="absolute -top-1 -right-1 -bottom-1 -left-1 flex items-center justify-center pointer-events-none">
+                <div className="bg-red-600 text-white text-xl font-black py-3 px-16 transform rotate-45 shadow-lg">
+                  קבוצה מלאה
                 </div>
               </div>
               
-              <h4 className="text-2xl font-black mb-3">קבוצה 1</h4>
-              <div className="mb-4">
-                <p className="font-semibold text-lg mb-3">📅 התקיים:</p>
-                <div className="grid grid-cols-2 gap-2 mb-3">
-                  <div className="bg-white/20 backdrop-blur-sm rounded-lg p-2 text-center border border-white/30">
-                    <div className="text-xs opacity-80">מפגש 1</div>
-                    <div className="font-bold">5.5</div>
-                  </div>
-                  <div className="bg-white/20 backdrop-blur-sm rounded-lg p-2 text-center border border-white/30">
-                    <div className="text-xs opacity-80">מפגש 2</div>
-                    <div className="font-bold">8.5</div>
-                  </div>
-                  <div className="bg-white/20 backdrop-blur-sm rounded-lg p-2 text-center border border-white/30">
-                    <div className="text-xs opacity-80">מפגש 3</div>
-                    <div className="font-bold">12.5</div>
-                  </div>
-                  <div className="bg-white/20 backdrop-blur-sm rounded-lg p-2 text-center border border-white/30">
-                    <div className="text-xs opacity-80">מפגש 4</div>
-                    <div className="font-bold">15.5</div>
-                  </div>
-                  <div className="bg-white/20 backdrop-blur-sm rounded-lg p-2 text-center border border-white/30">
-                    <div className="text-xs opacity-80">מפגש 5</div>
-                    <div className="font-bold">19.5</div>
-                  </div>
-                  <div className="bg-white/20 backdrop-blur-sm rounded-lg p-2 text-center border border-white/30">
-                    <div className="text-xs opacity-80">מפגש 6</div>
-                    <div className="font-bold">22.5</div>
-                  </div>
-                </div>
-                <div className="bg-white/30 backdrop-blur-sm rounded-lg p-2 text-center border border-white/40">
-                  <span className="text-sm">🕕 שעה: </span>
-                  <span className="font-bold text-lg">17:30</span>
-                </div>
-              </div>
-              <p className="text-sm opacity-90">6 ילדים השתתפו</p>
+              <h4 className="text-2xl font-black mb-8 opacity-50">קבוצה 1</h4>
+              <p className="text-lg opacity-50">התקיימה במאי</p>
+              <p className="text-sm opacity-50 mt-4">6 ילדים השתתפו</p>
             </motion.div>
 
             {/* קבוצה 2 - מלאה */}
@@ -251,48 +219,16 @@ const RegistrationSection = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="bg-gradient-to-br from-gray-400 to-gray-500 text-white rounded-4xl p-6 shadow-soft-lg border-2 border-gray-300 text-center relative overflow-hidden"
             >
-              {/* סטטוס מלאה */}
-              <div className="absolute top-3 right-3">
-                <div className="bg-red-500 text-white px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1">
-                  ✓ מלאה
+              {/* סרט מלוכסן "קבוצה מלאה" */}
+              <div className="absolute -top-1 -right-1 -bottom-1 -left-1 flex items-center justify-center pointer-events-none">
+                <div className="bg-red-600 text-white text-xl font-black py-3 px-16 transform rotate-45 shadow-lg">
+                  קבוצה מלאה
                 </div>
               </div>
               
-              <h4 className="text-2xl font-black mb-3">קבוצה 2</h4>
-              <div className="mb-4">
-                <p className="font-semibold text-lg mb-3">📅 התקיים:</p>
-                <div className="grid grid-cols-2 gap-2 mb-3">
-                  <div className="bg-white/20 backdrop-blur-sm rounded-lg p-2 text-center border border-white/30">
-                    <div className="text-xs opacity-80">מפגש 1</div>
-                    <div className="font-bold">26.5</div>
-                  </div>
-                  <div className="bg-white/20 backdrop-blur-sm rounded-lg p-2 text-center border border-white/30">
-                    <div className="text-xs opacity-80">מפגש 2</div>
-                    <div className="font-bold">29.5</div>
-                  </div>
-                  <div className="bg-white/20 backdrop-blur-sm rounded-lg p-2 text-center border border-white/30">
-                    <div className="text-xs opacity-80">מפגש 3</div>
-                    <div className="font-bold">2.6</div>
-                  </div>
-                  <div className="bg-white/20 backdrop-blur-sm rounded-lg p-2 text-center border border-white/30">
-                    <div className="text-xs opacity-80">מפגש 4</div>
-                    <div className="font-bold">5.6</div>
-                  </div>
-                  <div className="bg-white/20 backdrop-blur-sm rounded-lg p-2 text-center border border-white/30">
-                    <div className="text-xs opacity-80">מפגש 5</div>
-                    <div className="font-bold">9.6</div>
-                  </div>
-                  <div className="bg-white/20 backdrop-blur-sm rounded-lg p-2 text-center border border-white/30">
-                    <div className="text-xs opacity-80">מפגש 6</div>
-                    <div className="font-bold">12.6</div>
-                  </div>
-                </div>
-                <div className="bg-white/30 backdrop-blur-sm rounded-lg p-2 text-center border border-white/40">
-                  <span className="text-sm">🕕 שעה: </span>
-                  <span className="font-bold text-lg">17:30</span>
-                </div>
-              </div>
-              <p className="text-sm opacity-90">5 ילדים השתתפו</p>
+              <h4 className="text-2xl font-black mb-8 opacity-50">קבוצה 2</h4>
+              <p className="text-lg opacity-50">התקיימה במאי-יוני</p>
+              <p className="text-sm opacity-50 mt-4">5 ילדים השתתפו</p>
             </motion.div>
 
             {/* קבוצה 3 - מלאה */}
@@ -303,48 +239,16 @@ const RegistrationSection = () => {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="bg-gradient-to-br from-gray-400 to-gray-500 text-white rounded-4xl p-6 shadow-soft-lg border-2 border-gray-300 text-center relative overflow-hidden"
             >
-              {/* סטטוס מלאה */}
-              <div className="absolute top-3 right-3">
-                <div className="bg-red-500 text-white px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1">
-                  ✓ מלאה
+              {/* סרט מלוכסן "קבוצה מלאה" */}
+              <div className="absolute -top-1 -right-1 -bottom-1 -left-1 flex items-center justify-center pointer-events-none">
+                <div className="bg-red-600 text-white text-xl font-black py-3 px-16 transform rotate-45 shadow-lg">
+                  קבוצה מלאה
                 </div>
               </div>
               
-              <h4 className="text-2xl font-black mb-3">קבוצה 3</h4>
-              <div className="mb-4">
-                <p className="font-semibold text-lg mb-3">📅 התקיים:</p>
-                <div className="grid grid-cols-2 gap-2 mb-3">
-                  <div className="bg-white/20 backdrop-blur-sm rounded-lg p-2 text-center border border-white/30">
-                    <div className="text-xs opacity-80">מפגש 1</div>
-                    <div className="font-bold">16.6</div>
-                  </div>
-                  <div className="bg-white/20 backdrop-blur-sm rounded-lg p-2 text-center border border-white/30">
-                    <div className="text-xs opacity-80">מפגש 2</div>
-                    <div className="font-bold">19.6</div>
-                  </div>
-                  <div className="bg-white/20 backdrop-blur-sm rounded-lg p-2 text-center border border-white/30">
-                    <div className="text-xs opacity-80">מפגש 3</div>
-                    <div className="font-bold">23.6</div>
-                  </div>
-                  <div className="bg-white/20 backdrop-blur-sm rounded-lg p-2 text-center border border-white/30">
-                    <div className="text-xs opacity-80">מפגש 4</div>
-                    <div className="font-bold">26.6</div>
-                  </div>
-                  <div className="bg-white/20 backdrop-blur-sm rounded-lg p-2 text-center border border-white/30">
-                    <div className="text-xs opacity-80">מפגש 5</div>
-                    <div className="font-bold">30.6</div>
-                  </div>
-                  <div className="bg-white/20 backdrop-blur-sm rounded-lg p-2 text-center border border-white/30">
-                    <div className="text-xs opacity-80">מפגש 6</div>
-                    <div className="font-bold">3.7</div>
-                  </div>
-                </div>
-                <div className="bg-white/30 backdrop-blur-sm rounded-lg p-2 text-center border border-white/40">
-                  <span className="text-sm">🕕 שעה: </span>
-                  <span className="font-bold text-lg">17:30</span>
-                </div>
-              </div>
-              <p className="text-sm opacity-90">6 ילדים השתתפו</p>
+              <h4 className="text-2xl font-black mb-8 opacity-50">קבוצה 3</h4>
+              <p className="text-lg opacity-50">התקיימה ביוני-יולי</p>
+              <p className="text-sm opacity-50 mt-4">6 ילדים השתתפו</p>
             </motion.div>
 
             {/* קבוצה 4 - פתוחה להרשמה */}
