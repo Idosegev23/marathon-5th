@@ -49,10 +49,10 @@ const RegistrationSection = () => {
 
         {/* איך זה עובד */}
         <motion.div
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.4 }}
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-6xl font-black mb-8 text-pastel-coral">
@@ -94,11 +94,11 @@ const RegistrationSection = () => {
             ].map((step, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, y: 30 }}
+                initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="bg-white/90 backdrop-blur-sm rounded-3xl p-6 shadow-soft border-2 border-pastel-coral/20 hover:border-pastel-coral/40 transition-all duration-300 hover:scale-105"
+                transition={{ duration: 0.4, delay: index * 0.05 }}
+                className="bg-white/95 rounded-3xl p-6 shadow-soft border-2 border-pastel-coral/20 md:hover:border-pastel-coral/40 transition-colors duration-300"
               >
                 {/* מספר השלב */}
                 <div className="w-10 h-10 bg-pastel-coral rounded-full flex items-center justify-center mb-4">
@@ -124,10 +124,10 @@ const RegistrationSection = () => {
 
         {/* מה המשתתפים מקבלים */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.4 }}
           className="bg-gradient-to-br from-pastel-mint to-pastel-blue text-white rounded-5xl p-8 md:p-12 shadow-soft-lg mb-16"
         >
           <h3 className="text-3xl md:text-4xl font-black mb-8 text-center">
@@ -143,10 +143,10 @@ const RegistrationSection = () => {
             ].map((benefit, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
+                transition={{ duration: 0.3, delay: index * 0.05 }}
                 className="flex items-start gap-3"
               >
                 <span className="text-2xl">*</span>
@@ -158,10 +158,10 @@ const RegistrationSection = () => {
 
         {/* מה ההורים מקבלים */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.4 }}
           className="bg-gradient-to-br from-pastel-coral to-pastel-pink text-white rounded-5xl p-8 md:p-12 shadow-soft-lg mb-16"
         >
           <h3 className="text-3xl md:text-4xl font-black mb-8 text-center">
@@ -179,10 +179,10 @@ const RegistrationSection = () => {
             ].map((benefit, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
+                transition={{ duration: 0.3, delay: index * 0.05 }}
                 className="flex items-start gap-3"
               >
                 <span className="text-2xl">*</span>
@@ -194,10 +194,10 @@ const RegistrationSection = () => {
 
         {/* קבוצות הרשמה */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.4 }}
           className="mb-16"
         >
           <h3 className="text-3xl md:text-4xl font-black mb-12 text-center text-pastel-coral">
@@ -207,10 +207,10 @@ const RegistrationSection = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
             {/* קבוצה 1 - מלאה */}
             <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.1 }}
+              transition={{ duration: 0.3, delay: 0.1 }}
               className="bg-gradient-to-br from-gray-400 to-gray-500 text-white rounded-4xl p-6 shadow-soft-lg border-2 border-gray-300 text-center relative overflow-hidden"
             >
               {/* סרט מלוכסן "מלאה" */}
@@ -226,10 +226,10 @@ const RegistrationSection = () => {
 
             {/* קבוצה 2 - מלאה */}
             <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.2 }}
+              transition={{ duration: 0.3, delay: 0.2 }}
               className="bg-gradient-to-br from-gray-400 to-gray-500 text-white rounded-4xl p-6 shadow-soft-lg border-2 border-gray-300 text-center relative overflow-hidden"
             >
               {/* סרט מלוכסן "מלאה" */}
@@ -245,10 +245,10 @@ const RegistrationSection = () => {
 
             {/* קבוצה 3 - מלאה */}
             <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.3 }}
+              transition={{ duration: 0.3, delay: 0.3 }}
               className="bg-gradient-to-br from-gray-400 to-gray-500 text-white rounded-4xl p-6 shadow-soft-lg border-2 border-gray-300 text-center relative overflow-hidden"
             >
               {/* סרט מלוכסן "מלאה" */}
@@ -264,42 +264,42 @@ const RegistrationSection = () => {
 
             {/* קבוצה 4 - פתוחה להרשמה */}
             <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-              className="bg-gradient-to-br from-pastel-coral to-pastel-pink text-white rounded-4xl p-6 shadow-soft-lg border-2 border-pastel-coral/30 text-center hover:scale-105 transition-all duration-300"
+              transition={{ duration: 0.3, delay: 0.4 }}
+              className="bg-gradient-to-br from-pastel-coral to-pastel-pink text-white rounded-4xl p-6 shadow-soft-lg border-2 border-pastel-coral/30 text-center"
             >
               <h4 className="text-2xl font-black mb-3">קבוצה 4</h4>
               <div className="mb-4">
                 <p className="font-semibold text-lg mb-3">📅 מפגשים</p>
                 <div className="grid grid-cols-2 gap-2 mb-3">
-                  <div className="bg-white/20 backdrop-blur-sm rounded-lg p-2 text-center border border-white/30">
+                  <div className="bg-white/30 rounded-lg p-2 text-center border border-white/30">
                     <div className="text-xs opacity-80">מפגש 1</div>
                     <div className="font-bold">28.7</div>
                   </div>
-                  <div className="bg-white/20 backdrop-blur-sm rounded-lg p-2 text-center border border-white/30">
+                  <div className="bg-white/30 rounded-lg p-2 text-center border border-white/30">
                     <div className="text-xs opacity-80">מפגש 2</div>
                     <div className="font-bold">31.7</div>
                   </div>
-                  <div className="bg-white/20 backdrop-blur-sm rounded-lg p-2 text-center border border-white/30">
+                  <div className="bg-white/30 rounded-lg p-2 text-center border border-white/30">
                     <div className="text-xs opacity-80">מפגש 3</div>
                     <div className="font-bold">4.8</div>
                   </div>
-                  <div className="bg-white/20 backdrop-blur-sm rounded-lg p-2 text-center border border-white/30">
+                  <div className="bg-white/30 rounded-lg p-2 text-center border border-white/30">
                     <div className="text-xs opacity-80">מפגש 4</div>
                     <div className="font-bold">7.8</div>
                   </div>
-                  <div className="bg-white/20 backdrop-blur-sm rounded-lg p-2 text-center border border-white/30">
+                  <div className="bg-white/30 rounded-lg p-2 text-center border border-white/30">
                     <div className="text-xs opacity-80">מפגש 5</div>
                     <div className="font-bold">11.8</div>
                   </div>
-                  <div className="bg-white/20 backdrop-blur-sm rounded-lg p-2 text-center border border-white/30">
+                  <div className="bg-white/30 rounded-lg p-2 text-center border border-white/30">
                     <div className="text-xs opacity-80">מפגש 6</div>
                     <div className="font-bold">14.8</div>
                   </div>
                 </div>
-                <div className="bg-white/30 backdrop-blur-sm rounded-lg p-2 text-center border border-white/40">
+                <div className="bg-white/40 rounded-lg p-2 text-center border border-white/40">
                   <span className="text-sm">🕕 שעה: </span>
                   <span className="font-bold text-lg">17:30</span>
                 </div>
@@ -307,7 +307,7 @@ const RegistrationSection = () => {
               <p className="text-sm mb-4 opacity-90">5 ילדים בלבד</p>
               <button
                 onClick={handleSubmit}
-                className="bg-white text-pastel-coral py-3 px-6 rounded-full text-lg font-bold hover:bg-gray-50 transform hover:scale-105 transition-all duration-300 shadow-md"
+                className="bg-white text-pastel-coral py-3 px-6 rounded-full text-lg font-bold md:hover:bg-gray-50 transition-colors duration-300 shadow-md"
               >
                 להרשמה 🚀
               </button>
@@ -317,11 +317,11 @@ const RegistrationSection = () => {
 
         {/* טופס הרשמה מפורט */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="bg-white/80 backdrop-blur-sm rounded-5xl p-8 md:p-12 shadow-soft-lg border-2 border-pastel-coral/20 mb-16"
+          transition={{ duration: 0.4 }}
+          className="bg-white/95 rounded-5xl p-8 md:p-12 shadow-soft-lg border-2 border-pastel-coral/20 mb-16"
           id="detailed-form"
         >
           <h3 className="text-3xl md:text-4xl font-black mb-8 text-center text-pastel-coral">
@@ -447,7 +447,7 @@ ${registrationData.notes ? `הערות נוספות: ${registrationData.notes}` 
               <div className="text-center">
                     <button
                       type="submit"
-                  className="accent-button rounded-3xl text-xl px-8 py-4 transform hover:scale-105 transition-all duration-300 shadow-soft-lg"
+                  className="accent-button rounded-3xl text-xl px-8 py-4 md:hover:scale-105 transition-all duration-300 shadow-soft-lg"
                 >
                   שלח הרשמה מפורטת! 📝
                     </button>
@@ -458,10 +458,10 @@ ${registrationData.notes ? `הערות נוספות: ${registrationData.notes}` 
 
         {/* יצירת קשר */}
           <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.4 }}
           className="text-center"
           >
           <h3 className="text-3xl md:text-4xl font-black mb-8 text-pastel-coral">
