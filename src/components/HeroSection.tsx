@@ -89,19 +89,19 @@ const HeroSection = () => {
                 href="#הרשמה"
                 className="inline-block accent-button rounded-3xl text-lg px-6 py-3 transform hover:scale-105 transition-all duration-300"
               >
-                הרשמה 🚀
+                הרשמה
               </a>
               <a
-                href="#about"
+                href="#על-המרתון"
                 className="inline-block bg-white/80 backdrop-blur-sm text-pastel-coral border-2 border-pastel-coral rounded-3xl text-lg px-6 py-3 transform hover:scale-105 hover:bg-pastel-coral hover:text-white transition-all duration-300"
               >
-                רוצה לדעת עוד ℹ️
+                רוצה לדעת עוד
               </a>
               <a
-                href="#registration"
+                href="#לוגיסטיקה"
                 className="inline-block bg-white/80 backdrop-blur-sm text-pastel-blue border-2 border-pastel-blue rounded-3xl text-lg px-6 py-3 transform hover:scale-105 hover:bg-pastel-blue hover:text-white transition-all duration-300"
               >
-                תאריכים ועלות 📅
+                תאריכים ועלות
               </a>
             </motion.div>
           </motion.div>
