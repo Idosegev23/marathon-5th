@@ -199,6 +199,7 @@ const RegistrationSection = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.4 }}
           className="mb-16"
+          id="קבוצות"
         >
           <h3 className="text-3xl md:text-4xl font-black mb-12 text-center text-pastel-coral">
             קבוצות מרתון GEN-Z

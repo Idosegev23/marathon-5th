@@ -98,7 +98,7 @@ const HeroSection = () => {
                 רוצה לדעת עוד
               </a>
               <a
-                href="#לוגיסטיקה"
+                href="#קבוצות"
                 className="inline-block bg-white/80 backdrop-blur-sm text-pastel-blue border-2 border-pastel-blue rounded-3xl text-lg px-6 py-3 transform hover:scale-105 hover:bg-pastel-blue hover:text-white transition-all duration-300"
               >
                 תאריכים ועלות
