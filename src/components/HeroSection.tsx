@@ -78,17 +78,30 @@ const HeroSection = () => {
               </div>
             </motion.div>
 
-            {/* כפתור CTA */}
+            {/* כפתורים */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.8 }}
+              className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
             >
               <a
                 href="#הרשמה"
-                className="inline-block accent-button rounded-3xl text-xl px-8 py-4 transform hover:scale-105 transition-all duration-300"
+                className="inline-block accent-button rounded-3xl text-lg px-6 py-3 transform hover:scale-105 transition-all duration-300"
               >
-                הרשמה
+                הרשמה 🚀
+              </a>
+              <a
+                href="#about"
+                className="inline-block bg-white/80 backdrop-blur-sm text-pastel-coral border-2 border-pastel-coral rounded-3xl text-lg px-6 py-3 transform hover:scale-105 hover:bg-pastel-coral hover:text-white transition-all duration-300"
+              >
+                רוצה לדעת עוד ℹ️
+              </a>
+              <a
+                href="#registration"
+                className="inline-block bg-white/80 backdrop-blur-sm text-pastel-blue border-2 border-pastel-blue rounded-3xl text-lg px-6 py-3 transform hover:scale-105 hover:bg-pastel-blue hover:text-white transition-all duration-300"
+              >
+                תאריכים ועלות 📅
               </a>
             </motion.div>
           </motion.div>

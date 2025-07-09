@@ -300,11 +300,14 @@ const RegistrationSection = () => {
                   </div>
                 </div>
                 <div className="bg-white/40 rounded-lg p-2 text-center border border-white/40">
-                  <span className="text-sm">🕕 שעה: </span>
-                  <span className="font-bold text-lg">17:30</span>
+                  <span className="text-sm text-black">🕕 שעה: </span>
+                  <span className="font-bold text-lg text-black">17:30</span>
                 </div>
               </div>
               <p className="text-sm mb-4 opacity-90">5 ילדים בלבד</p>
+              <div className="text-center mb-4">
+                <span className="text-2xl font-black text-black">💰 540 ש״ח</span>
+              </div>
               <button
                 onClick={handleSubmit}
                 className="bg-white text-pastel-coral py-3 px-6 rounded-full text-lg font-bold md:hover:bg-gray-50 transition-colors duration-300 shadow-md"
