@@ -3,6 +3,7 @@ import "@fontsource/heebo/400.css";
 import "@fontsource/heebo/700.css";
 import "@fontsource/varela-round/400.css";
 import "./globals.css";
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata: Metadata = {
   title: "מרתון אנגלית קיץ GEN-Z - אילנית ליבוביץ שגב",
@@ -30,6 +31,7 @@ export default function RootLayout({
     <html lang="he" dir="rtl">
       <body className="antialiased font-heebo">
         {children}
+        <Analytics />
         <script dangerouslySetInnerHTML={{
           __html: `
             // מניעת גלילה צידית ותיקוני מובייל
