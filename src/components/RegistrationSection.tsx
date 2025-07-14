@@ -89,7 +89,7 @@ const RegistrationSection = () => {
                 icon: <ChatIcon />,
                 number: "4",
                 title: "הכיף מתחיל!",
-                description: "תוכנית מפורטת למרתון והודעה אישית עם הצגה עצמית. נתראה ב-28.7!"
+                description: "תוכנית מפורטת למרתון והודעה אישית עם הצגה עצמית. נתראה ב-27.7!"
               }
             ].map((step, index) => (
               <motion.div
@@ -205,7 +205,7 @@ const RegistrationSection = () => {
             קבוצות מרתון GEN-Z
           </h3>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 max-w-6xl mx-auto">
             {/* קבוצה 1 - מלאה */}
             <motion.div
               initial={{ opacity: 0 }}
@@ -263,41 +263,60 @@ const RegistrationSection = () => {
               <p className="text-lg opacity-50">מועד יולי</p>
             </motion.div>
 
-            {/* קבוצה 4 - פתוחה להרשמה */}
+            {/* קבוצה 4 - מלאה */}
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.3, delay: 0.4 }}
+              className="bg-gradient-to-br from-gray-400 to-gray-500 text-white rounded-4xl p-6 shadow-soft-lg border-2 border-gray-300 text-center relative overflow-hidden"
+            >
+              {/* סרט מלוכסן "מלאה" */}
+              <div className="absolute -top-1 -right-1 -bottom-1 -left-1 flex items-center justify-center pointer-events-none">
+                <div className="bg-red-600 text-white text-xl font-black py-3 px-16 transform rotate-45 shadow-lg">
+                  מלאה
+                </div>
+              </div>
+              
+              <h4 className="text-2xl font-black mb-4 opacity-50">קבוצה 4</h4>
+              <p className="text-lg opacity-50">מועד יולי</p>
+            </motion.div>
+
+            {/* קבוצה 5 - פתוחה להרשמה */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.3, delay: 0.5 }}
               className="bg-gradient-to-br from-pastel-coral to-pastel-pink text-white rounded-4xl p-6 shadow-soft-lg border-2 border-pastel-coral/30 text-center"
             >
-              <h4 className="text-2xl font-black mb-3">קבוצה 4</h4>
+              <h4 className="text-2xl font-black mb-3">קבוצה 5</h4>
               <div className="mb-4">
                 <p className="font-semibold text-lg mb-3">📅 מפגשים</p>
                 <div className="grid grid-cols-2 gap-2 mb-3">
                   <div className="bg-white/30 rounded-lg p-2 text-center border border-white/30">
                     <div className="text-xs opacity-80">מפגש 1</div>
-                    <div className="font-bold">28.7</div>
+                    <div className="font-bold">27.7</div>
                   </div>
                   <div className="bg-white/30 rounded-lg p-2 text-center border border-white/30">
                     <div className="text-xs opacity-80">מפגש 2</div>
-                    <div className="font-bold">31.7</div>
+                    <div className="font-bold">30.7</div>
                   </div>
                   <div className="bg-white/30 rounded-lg p-2 text-center border border-white/30">
                     <div className="text-xs opacity-80">מפגש 3</div>
-                    <div className="font-bold">4.8</div>
+                    <div className="font-bold">3.8</div>
                   </div>
                   <div className="bg-white/30 rounded-lg p-2 text-center border border-white/30">
                     <div className="text-xs opacity-80">מפגש 4</div>
-                    <div className="font-bold">7.8</div>
+                    <div className="font-bold">6.8</div>
                   </div>
                   <div className="bg-white/30 rounded-lg p-2 text-center border border-white/30">
                     <div className="text-xs opacity-80">מפגש 5</div>
-                    <div className="font-bold">11.8</div>
+                    <div className="font-bold">10.8</div>
                   </div>
                   <div className="bg-white/30 rounded-lg p-2 text-center border border-white/30">
                     <div className="text-xs opacity-80">מפגש 6</div>
-                    <div className="font-bold">14.8</div>
+                    <div className="font-bold">13.8</div>
                   </div>
                 </div>
                 <div className="bg-white/40 rounded-lg p-2 text-center border border-white/40">
@@ -329,7 +348,7 @@ const RegistrationSection = () => {
           id="detailed-form"
         >
           <h3 className="text-3xl md:text-4xl font-black mb-8 text-center text-pastel-coral">
-            📩 הרשמה מפורטת לקבוצה 4:
+            📩 הרשמה מפורטת לקבוצה 5:
           </h3>
           
           <form onSubmit={async (e) => {
@@ -343,7 +362,7 @@ const RegistrationSection = () => {
               phone: formData.get('phone'),
               notes: formData.get('notes') || '',
               timestamp: new Date().toISOString(),
-              group: 'קבוצה 4 - מועד יולי'
+              group: 'קבוצה 5 - מועד יולי-אוגוסט'
             };
 
             try {
@@ -366,7 +385,7 @@ const RegistrationSection = () => {
               console.error('Error:', error);
               // גיבוי - פתיחת וואטסאפ אם הוובקהוק נכשל
               const message = `שלום אילנית!
-אני מעוניין/ת להרשים את הילד/ה שלי לקבוצה 4 במרתון GEN-Z באנגלית (מועד יולי):
+אני מעוניין/ת להרשים את הילד/ה שלי לקבוצה 5 במרתון GEN-Z באנגלית (מועד יולי-אוגוסט):
 
 שם ההורה: ${registrationData.parentName}
 שם הילד/ה: ${registrationData.childName}

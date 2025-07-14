@@ -28,6 +28,12 @@ const WhatWillLearnSection = () => {
     </svg>
   );
 
+  const ListenIcon = () => (
+    <svg className="w-12 h-12 text-pastel-coral" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M12 1c-4.97 0-9 4.03-9 9v7c0 1.66 1.34 3 3 3h3v-8H5v-2c0-3.87 3.13-7 7-7s7 3.13 7 7v2h-4v8h3c1.66 0 3-1.34 3-3v-7c0-4.97-4.03-9-9-9z" />
+    </svg>
+  );
+
   const ConfidenceIcon = () => (
     <svg className="w-12 h-12 text-pastel-coral" fill="currentColor" viewBox="0 0 24 24">
       <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
@@ -36,28 +42,28 @@ const WhatWillLearnSection = () => {
 
   const skills = [
     {
-      icon: <PuzzleIcon />,
-      title: "לבנות משפט באנגלית",
-      subtitle: "בלי לנחש"
+      icon: <ReadIcon />,
+      title: "לדייק את הקריאה",
+      subtitle: "ופחות לנחש מה כתוב"
     },
     {
       icon: <ChatIcon />,
-      title: "להשתתף בשיחה פשוטה",
-      subtitle: "באנגלית"
+      title: "להשתתף בשיחה",
+      subtitle: "פשוטה ובסיסית"
     },
     {
-      icon: <ReadIcon />,
-      title: "לקרוא טקסטים קצרים",
-      subtitle: "בלי תרגום"
+      icon: <PuzzleIcon />,
+      title: "להבין את עקרונות מבנה המשפט",
+      subtitle: "ודקדוק"
     },
     {
-      icon: <WriteIcon />,
-      title: "לכתוב פסקה ברורה",
-      subtitle: "גם אם זה לא מושלם"
+      icon: <ListenIcon />,
+      title: "להבין גם מה שהם שומעים",
+      subtitle: ""
     },
     {
       icon: <ConfidenceIcon />,
-      title: "ובעיקר - להרגיש",
+      title: "ובעיקר להרגיש",
       subtitle: "שהם יודעים מה קורה בשיעור"
     }
   ];

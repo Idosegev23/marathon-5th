@@ -44,7 +44,7 @@ const LogisticsSection = () => {
     {
       icon: <CalendarIcon />,
       title: "מתי",
-      description: "יולי–אוגוסט (קבוצות לפי ביקוש)",
+      description: "בחופש הגדול תאריכים מופיעים למטה 👇🏻",
       gradient: "from-pastel-mint to-pastel-blue"
     },
     {
