@@ -71,7 +71,7 @@ const RegistrationSection = () => {
                 icon: <FormIcon />,
                 number: "1",
                 title: "טופס הרשמה קצר",
-                description: "יוצרת עימכם קשר ועונה על שאלות. במידה ומעוניינים תקבלו לינק לתשלום"
+                description: ""
               },
               {
                 icon: <BookUserIcon />,
@@ -376,8 +376,8 @@ const RegistrationSection = () => {
               });
 
               if (response.ok) {
-                alert('ההרשמה נשלחה בהצלחה! נחזור אליכם בהקדם.');
-                (e.target as HTMLFormElement).reset();
+                // הפנייה לעמוד התשלום
+                window.location.href = 'https://marathon-policy.vercel.app/';
               } else {
                 throw new Error('שגיאה בשליחה');
               }
@@ -472,7 +472,7 @@ ${registrationData.notes ? `הערות נוספות: ${registrationData.notes}` 
                       type="submit"
                   className="accent-button rounded-3xl text-xl px-8 py-4 md:hover:scale-105 transition-all duration-300 shadow-soft-lg"
                 >
-                  שלח הרשמה מפורטת! 📝
+                  המשך לתשלום
                     </button>
               </div>
           </div>
