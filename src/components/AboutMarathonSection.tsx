@@ -54,17 +54,10 @@ const AboutMarathonSection = () => {
     </svg>
   );
 
-  const CertificateIcon = () => (
-    <svg className="w-16 h-16 text-white" fill="currentColor" viewBox="0 0 24 24">
-      <path d="M14 9V4H5v16h6.5l-.5-.5L10 18l1-1 3 3h7V9h-7zm-2 6h-2v-2h2v2zm0-4h-2V9h2v2z"/>
-    </svg>
-  );
-
   return (
     <section id="על-המרתון" className="py-20 md:py-32 bg-gradient-to-br from-white via-pastel-yellow/10 to-pastel-mint/15">
       <div className="container-center">
-        
-        {/* למה בכלל צריך את זה */}
+        {/* למה צריך את זה */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -75,7 +68,7 @@ const AboutMarathonSection = () => {
           <h2 className="text-4xl md:text-6xl font-black text-center mb-16 text-pastel-coral">
             למה בכלל צריך את זה?
           </h2>
-          
+
           <div className="max-w-5xl mx-auto">
             <motion.p
               initial={{ opacity: 0 }}
@@ -84,10 +77,9 @@ const AboutMarathonSection = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-2xl md:text-3xl mb-16 text-center text-darker leading-relaxed font-medium"
             >
-              המעבר לכיתה ז׳ הוא קפיצה רצינית – השיעורים באנגלית הופכים מהכרת מילים – לשימוש בשפה. 
-              פתאום שואלים שאלות באנגלית, כותבים פסקאות, ויש טקסטים שלמים שצריך להבין לבד.
+              המעבר לכיתה ו׳ הוא קפיצה רצינית - השיעורים באנגלית עוברים מהכרת מילים לשימוש בשפה. פתאום שואלים שאלות באנגלית, כותבים פסקאות, ויש טקסטים שלמים שצריך להבין לבד.
             </motion.p>
-            
+
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
               <motion.div
                 initial={{ opacity: 0, x: -50 }}
@@ -102,7 +94,7 @@ const AboutMarathonSection = () => {
                 <h3 className="text-2xl font-bold mb-4 text-red-500">מי שלא מתחיל חזק</h3>
                 <p className="text-xl text-darker">מהר מאוד מאבד ביטחון</p>
               </motion.div>
-              
+
               <motion.div
                 initial={{ opacity: 0, x: 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -130,14 +122,14 @@ const AboutMarathonSection = () => {
           <h2 className="text-4xl md:text-6xl font-black text-center mb-16 text-pastel-pink">
             מה זה מרתון GEN-Z
           </h2>
-          
+
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {[
                 {
                   icon: <LightBulbIcon />,
                   title: "מרתון של 6 מפגשים",
-                  description: "(75 דקות כל אחד)",
+                  description: "75 דקות כל אחד",
                   bg: "bg-pastel-yellow/50"
                 },
                 {
@@ -185,7 +177,7 @@ const AboutMarathonSection = () => {
                 </motion.div>
               ))}
             </div>
-            
+
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -200,7 +192,7 @@ const AboutMarathonSection = () => {
                   </svg>
                 </div>
                 <h3 className="text-2xl font-bold mb-4">חוויית הצלחה אמיתית</h3>
-                <p className="text-xl">ביטחון עצמי וכלים מעשיים לקראת כיתה ז׳</p>
+                <p className="text-xl">ביטחון עצמי וכלים מעשיים לקראת כיתה ו׳</p>
               </div>
             </motion.div>
           </div>
@@ -210,4 +202,4 @@ const AboutMarathonSection = () => {
   );
 };
 
-export default AboutMarathonSection; 
+export default AboutMarathonSection;

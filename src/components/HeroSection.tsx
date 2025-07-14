@@ -54,7 +54,7 @@ const HeroSection = () => {
               className="text-2xl md:text-3xl lg:text-4xl font-bold mb-8 text-pastel-blue leading-relaxed"
             >
               מרתון קיץ GEN-Z באנגלית<br />
-              לילדים שעולים לכיתה ז׳
+              לילדים שעולים לכיתה ו׳
             </motion.p>
 
             {/* שלושת העמודים */}

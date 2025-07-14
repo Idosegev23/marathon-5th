@@ -6,38 +6,38 @@ import { motion } from 'framer-motion';
 const ForWhoSection = () => {
   const StudentIcon = () => (
     <svg className="w-12 h-12 text-pastel-coral" fill="currentColor" viewBox="0 0 24 24">
-      <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/>
+      <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z" />
     </svg>
   );
 
   const FearIcon = () => (
     <svg className="w-12 h-12 text-pastel-coral" fill="currentColor" viewBox="0 0 24 24">
-      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
     </svg>
   );
 
   const CuriousIcon = () => (
     <svg className="w-12 h-12 text-pastel-coral" fill="currentColor" viewBox="0 0 24 24">
-      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
     </svg>
   );
 
   const ParentIcon = () => (
     <svg className="w-12 h-12 text-pastel-coral" fill="currentColor" viewBox="0 0 24 24">
-      <path d="M16 4c0-1.11.89-2 2-2s2 .89 2 2-.89 2-2 2-2-.89-2-2zM4 18v-4h3v-3h6v3h3v4H4zm9-7c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"/>
+      <path d="M16 4c0-1.11.89-2 2-2s2 .89 2 2-.89 2-2 2-2-.89-2-2zM4 18v-4h3v-3h6v3h3v4H4zm9-7c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z" />
     </svg>
   );
 
   const QualityIcon = () => (
     <svg className="w-12 h-12 text-pastel-coral" fill="currentColor" viewBox="0 0 24 24">
-      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
     </svg>
   );
 
   const targetAudience = [
     {
       icon: <StudentIcon />,
-      title: "תלמידים שעולים לכיתה ז׳",
+      title: "תלמידים שעולים לכיתה ו׳",
       description: ""
     },
     {
@@ -96,7 +96,7 @@ const ForWhoSection = () => {
               </motion.div>
             ))}
           </div>
-          
+
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -105,11 +105,9 @@ const ForWhoSection = () => {
             className="text-center mt-16"
           >
             <div className="bg-gradient-to-br from-pastel-yellow to-pastel-mint text-white py-12 px-8 rounded-5xl max-w-2xl mx-auto shadow-soft-lg">
-              <h3 className="text-2xl md:text-3xl font-bold mb-4">
-                המסר שלנו
-              </h3>
+              <h3 className="text-2xl md:text-3xl font-bold mb-4">המסר שלנו</h3>
               <p className="text-lg md:text-xl leading-relaxed">
-                כל ילד יכול להצליח באנגלית – רק צריך את הגישה הנכונה
+                כל ילד יכול להצליח באנגלית - רק צריך את הגישה הנכונה
               </p>
             </div>
           </motion.div>
@@ -119,4 +117,4 @@ const ForWhoSection = () => {
   );
 };
 
-export default ForWhoSection; 
+export default ForWhoSection;

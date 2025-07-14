@@ -7,7 +7,7 @@ import { Analytics } from '@vercel/analytics/react';
 
 export const metadata: Metadata = {
   title: "מרתון אנגלית קיץ GEN-Z - אילנית ליבוביץ שגב",
-  description: "מרתון אנגלית לילדים שעולים לכיתה ז׳. 6 מפגשים ממוקדים, 5 ילדים בקבוצה. הכנה מושלמת לכיתה ז׳ באנגלית.",
+  description: "מרתון אנגלית לילדים שעולים לכיתה ו׳. 6 מפגשים ממוקדים, 5 ילדים בקבוצה. הכנה מושלמת לכיתה ו׳ באנגלית.",
   other: {
     'format-detection': 'telephone=no',
     'mobile-web-app-capable': 'yes',
@@ -34,11 +34,7 @@ export default function RootLayout({
         <Analytics />
         <script dangerouslySetInnerHTML={{
           __html: `
-            // מניעת גלילה צידית ותיקוני מובייל
-            document.documentElement.style.overflowX = 'hidden';
-            document.body.style.overflowX = 'hidden';
-            
-            // מניעת אנימציות במובייל
+            // מניעת אנימציות במובייל - ללא שינוי styles inline
             function isMobile() {
               return window.innerWidth <= 768;
             }
