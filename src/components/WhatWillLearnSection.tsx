@@ -111,7 +111,7 @@ const WhatWillLearnSection = () => {
             <div className="bg-gradient-to-br from-pastel-coral to-pastel-pink text-white py-12 px-8 rounded-5xl max-w-2xl mx-auto shadow-soft-lg">
               <h3 className="text-2xl md:text-3xl font-bold mb-4">המטרה שלנו</h3>
               <p className="text-lg md:text-xl leading-relaxed">
-                לא רק לכתוב ולדבר - אלא להרגיש בטוח ומוכן לכיתה ו׳
+                לא רק לכתוב ולדבר - אלא להרגיש בטוח ומוכן לכיתה ו&rsquo;
               </p>
             </div>
           </motion.div>

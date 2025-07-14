@@ -26,10 +26,10 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-lg leading-relaxed opacity-90">
-              מרתון קיץ באנגלית לילדים שעולים לכיתה ו׳
+              מרתון קיץ באנגלית לילדים שעולים לכיתה ו&rsquo;
             </p>
             <p className="text-base mt-4 opacity-75">
-              בואו נכין את הילד שלכם להצלחה בכיתה ו׳
+              בואו נכין את הילד שלכם להצלחה בכיתה ו&rsquo;
             </p>
           </motion.div>
 

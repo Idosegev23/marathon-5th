@@ -77,7 +77,7 @@ const AboutMarathonSection = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-2xl md:text-3xl mb-16 text-center text-darker leading-relaxed font-medium"
             >
-              המעבר לכיתה ו' הוא שלב חשוב ומרגש –
+              המעבר לכיתה ו&rsquo; הוא שלב חשוב ומרגש –
               שנה אחרונה בבית ספר יסודי והכנה לחטיבה. השיעורים באנגלית נהיים מורכבים יותר, לומדים טקסטים שלמים, מבינים הוראות באנגלית, כותבים תשובות ויש יותר דקדוק ודרישה להתבטא בכתב ובעל פה.
             </motion.p>
 
@@ -193,7 +193,7 @@ const AboutMarathonSection = () => {
                   </svg>
                 </div>
                 <h3 className="text-2xl font-bold mb-4">חוויית הצלחה אמיתית</h3>
-                <p className="text-xl">ביטחון עצמי וכלים מעשיים לקראת כיתה ו׳</p>
+                <p className="text-xl">ביטחון עצמי וכלים מעשיים לקראת כיתה ו&rsquo;</p>
               </div>
             </motion.div>
           </div>
