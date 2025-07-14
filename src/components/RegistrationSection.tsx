@@ -348,7 +348,7 @@ const RegistrationSection = () => {
 
             try {
               // שליחה לוובקהוק
-              const response = await fetch('https://hook.eu2.make.com/9yky6tysvodj3d0hdyxuw52e2sya7cbb', {
+              const response = await fetch('https://hook.eu2.make.com/c4ihetsd5sd6qjpoll3prh0t3dkc1g1a', {
                 method: 'POST',
                 headers: {
                   'Content-Type': 'application/json',
