@@ -77,7 +77,7 @@ const AboutMarathonSection = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-2xl md:text-3xl mb-16 text-center text-darker leading-relaxed font-medium"
             >
-              המעבר לכיתה ו&rsquo; הוא שלב חשוב ומרגש –
+              המעבר לכיתה ה&rsquo; הוא שלב חשוב ומרגש –
               שנה אחרונה בבית ספר יסודי והכנה לחטיבה. השיעורים באנגלית הופכים למורכבים, לומדים טקסטים שלמים, מבינים הוראות באנגלית, כותבים תשובות ויש יותר דקדוק ודרישה להתבטא בכתב ובעל פה.
             </motion.p>
 
@@ -113,7 +113,7 @@ const AboutMarathonSection = () => {
           </div>
         </motion.div>
 
-        {/* מה זה מרתון GEN-Z */}
+        {/* מה זה מרתון כיתה ה' */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -121,7 +121,7 @@ const AboutMarathonSection = () => {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-4xl md:text-6xl font-black text-center mb-16 text-pastel-pink">
-            מה זה מרתון GEN-Z
+            מה זה מרתון כיתה ה'
           </h2>
 
           <div className="max-w-6xl mx-auto">
@@ -193,7 +193,7 @@ const AboutMarathonSection = () => {
                   </svg>
                 </div>
                 <h3 className="text-2xl font-bold mb-4">חוויית הצלחה אמיתית</h3>
-                <p className="text-xl">ביטחון עצמי וכלים מעשיים לקראת כיתה ו&rsquo;</p>
+                <p className="text-xl">ביטחון עצמי וכלים מעשיים לקראת כיתה ה&rsquo;</p>
               </div>
             </motion.div>
           </div>

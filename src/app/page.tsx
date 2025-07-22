@@ -10,8 +10,8 @@ import LogisticsSection from '@/components/LogisticsSection';
 import RegistrationSection from '@/components/RegistrationSection';
 
 export const metadata: Metadata = {
-  title: 'מרתון אנגלית קיץ GEN-Z - אילנית ליבוביץ שגב',
-      description: 'מרתון אנגלית לילדים שעולים לכיתה ו&rsquo;. 6 מפגשים ממוקדים, 5 ילדים בקבוצה. הכנה מושלמת לכיתה ו&rsquo; באנגלית.',
+  title: 'מרתון אנגלית קיץ - כיתה ה\' - אילנית ליבוביץ שגב',
+  description: 'מרתון אנגלית לילדים שעולים לכיתה ה&rsquo;. 6 מפגשים ממוקדים, 5 ילדים בקבוצה. הכנה מושלמת לכיתה ה&rsquo; באנגלית.',
 };
 
 export default function Home() {

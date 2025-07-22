@@ -168,7 +168,7 @@ const RegistrationSection = () => {
             💌 ומה ההורים מקבלים בסוף?
           </h3>
           <p className="text-lg mb-8 text-center">
-            בנוסף לחוויה של הילדים – גם אתם, ההורים, מקבלים בסיום מרתון GEN-Z:
+            בנוסף לחוויה של הילדים – גם אתם, ההורים, מקבלים בסיום מרתון כיתה ה':
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
@@ -202,7 +202,7 @@ const RegistrationSection = () => {
           id="קבוצות"
         >
           <h3 className="text-3xl md:text-4xl font-black mb-12 text-center text-pastel-coral">
-            קבוצות מרתון GEN-Z
+            קבוצות מרתון כיתה ה'
           </h3>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 max-w-6xl mx-auto">
@@ -385,7 +385,7 @@ const RegistrationSection = () => {
               console.error('Error:', error);
               // גיבוי - פתיחת וואטסאפ אם הוובקהוק נכשל
               const message = `שלום אילנית!
-אני מעוניין/ת להרשים את הילד/ה שלי לקבוצה 5 במרתון GEN-Z באנגלית (מועד יולי-אוגוסט):
+אני מעוניין/ת להרשים את הילד/ה שלי לקבוצה 5 במרתון כיתה ה' באנגלית (מועד יולי-אוגוסט):
 
 שם ההורה: ${registrationData.parentName}
 שם הילד/ה: ${registrationData.childName}

@@ -22,14 +22,14 @@ const Footer = () => {
                 <div className="w-8 h-8 bg-white rounded-full"></div>
               </div>
               <div className="text-3xl font-black">
-                מרתון <span className="text-accent">GEN-Z</span>
+                מרתון <span className="text-accent">כיתה ה'</span>
               </div>
             </div>
             <p className="text-lg leading-relaxed opacity-90">
-              מרתון קיץ באנגלית לילדים שעולים לכיתה ו&rsquo;
+              מרתון קיץ באנגלית לילדים שעולים לכיתה ה&rsquo;
             </p>
             <p className="text-base mt-4 opacity-75">
-              בואו נכין את הילד שלכם להצלחה בכיתה ו&rsquo;
+              בואו נכין את הילד שלכם להצלחה בכיתה ה&rsquo;
             </p>
           </motion.div>
 
@@ -121,7 +121,7 @@ const Footer = () => {
           className="text-center"
         >
           <p className="text-lg opacity-75">
-            © 2024 מרתון GEN-Z. כל הזכויות שמורות.
+            © 2024 מרתון כיתה ה'. כל הזכויות שמורות.
           </p>
           <p className="text-sm mt-2 opacity-60">
             נבנה באהבה לדור העתיד 💙

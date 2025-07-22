@@ -53,8 +53,8 @@ const HeroSection = () => {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-2xl md:text-3xl lg:text-4xl font-bold mb-8 text-pastel-blue leading-relaxed"
             >
-              מרתון קיץ GEN-Z באנגלית<br />
-              לילדים שעולים לכיתה ו&rsquo;
+                              מרתון קיץ באנגלית<br />
+                לילדים שעולים לכיתה ה&rsquo;
             </motion.p>
 
             {/* שלושת העמודים */}
