@@ -168,7 +168,7 @@ const RegistrationSection = () => {
             💌 ומה ההורים מקבלים בסוף?
           </h3>
           <p className="text-lg mb-8 text-center">
-            בנוסף לחוויה של הילדים – גם אתם, ההורים, מקבלים בסיום מרתון כיתה ה':
+            בנוסף לחוויה של הילדים – גם אתם, ההורים, מקבלים בסיום מרתון כיתה ה&rsquo;:
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
@@ -202,7 +202,7 @@ const RegistrationSection = () => {
           id="קבוצות"
         >
           <h3 className="text-3xl md:text-4xl font-black mb-12 text-center text-pastel-coral">
-            קבוצות מרתון כיתה ה'
+            קבוצות מרתון כיתה ה&rsquo;
           </h3>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 max-w-6xl mx-auto">

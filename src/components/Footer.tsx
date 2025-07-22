@@ -22,7 +22,7 @@ const Footer = () => {
                 <div className="w-8 h-8 bg-white rounded-full"></div>
               </div>
               <div className="text-3xl font-black">
-                מרתון <span className="text-accent">כיתה ה'</span>
+                מרתון <span className="text-accent">כיתה ה&rsquo;</span>
               </div>
             </div>
             <p className="text-lg leading-relaxed opacity-90">
@@ -121,7 +121,7 @@ const Footer = () => {
           className="text-center"
         >
           <p className="text-lg opacity-75">
-            © 2024 מרתון כיתה ה'. כל הזכויות שמורות.
+            © 2024 מרתון כיתה ה&rsquo;. כל הזכויות שמורות.
           </p>
           <p className="text-sm mt-2 opacity-60">
             נבנה באהבה לדור העתיד 💙
