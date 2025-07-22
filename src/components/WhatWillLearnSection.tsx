@@ -64,7 +64,7 @@ const WhatWillLearnSection = () => {
     {
       icon: <ConfidenceIcon />,
       title: "ובעיקר להרגיש",
-      subtitle: "שהם יודעים מה קורה בשיעור"
+      subtitle: "שהם מסוגלים"
     }
   ];
 
