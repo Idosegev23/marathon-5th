@@ -121,7 +121,7 @@ const Footer = () => {
           className="text-center"
         >
           <p className="text-lg opacity-75">
-            © 2024 מרתון כיתה ה&rsquo;. כל הזכויות שמורות.
+            © 2025 מרתון כיתה ה&rsquo;. כל הזכויות שמורות.
           </p>
           <p className="text-sm mt-2 opacity-60">
             נבנה באהבה לדור העתיד 💙

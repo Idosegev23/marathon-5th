@@ -50,7 +50,7 @@ const Header = () => {
               <span className="text-white font-black text-xl">E</span>
             </div>
             <div className="hidden sm:block">
-              <h1 className="font-black text-xl text-text-black">מרתון כיתה ה&rsquo;</h1>
+              <h1 className="font-black text-xl text-text-black">מרתון GEN-Z</h1>
               <p className="text-sm text-text-black/70">באנגלית</p>
         </div>
           </div>
