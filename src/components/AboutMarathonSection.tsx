@@ -121,7 +121,7 @@ const AboutMarathonSection = () => {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-4xl md:text-6xl font-black text-center mb-16 text-pastel-pink">
-            מה זה מרתון כיתה ה&rsquo;
+            מה זה מרתון GEN-Z;
           </h2>
 
           <div className="max-w-6xl mx-auto">
