@@ -89,7 +89,7 @@ const RegistrationSection = () => {
                 icon: <ChatIcon />,
                 number: "4",
                 title: "הכיף מתחיל!",
-                description: "תוכנית מפורטת למרתון והודעה אישית עם הצגה עצמית. נתראה ב-27.7!"
+                description: "תוכנית מפורטת למרתון והודעה אישית עם הצגה עצמית. נתראה ב-28.8!"
               }
             ].map((step, index) => (
               <motion.div
@@ -239,27 +239,27 @@ const RegistrationSection = () => {
                 <div className="grid grid-cols-2 gap-2 mb-3">
                   <div className="bg-white/30 rounded-lg p-2 text-center border border-white/30">
                     <div className="text-xs opacity-80">מפגש 1</div>
-                    <div className="font-bold">18.8</div>
-                  </div>
-                  <div className="bg-white/30 rounded-lg p-2 text-center border border-white/30">
-                    <div className="text-xs opacity-80">מפגש 2</div>
-                    <div className="font-bold">21.8</div>
-                  </div>
-                  <div className="bg-white/30 rounded-lg p-2 text-center border border-white/30">
-                    <div className="text-xs opacity-80">מפגש 3</div>
-                    <div className="font-bold">25.8</div>
-                  </div>
-                  <div className="bg-white/30 rounded-lg p-2 text-center border border-white/30">
-                    <div className="text-xs opacity-80">מפגש 4</div>
                     <div className="font-bold">28.8</div>
                   </div>
                   <div className="bg-white/30 rounded-lg p-2 text-center border border-white/30">
-                    <div className="text-xs opacity-80">מפגש 5</div>
+                    <div className="text-xs opacity-80">מפגש 2</div>
                     <div className="font-bold">2.9</div>
                   </div>
                   <div className="bg-white/30 rounded-lg p-2 text-center border border-white/30">
-                    <div className="text-xs opacity-80">מפגש 6</div>
+                    <div className="text-xs opacity-80">מפגש 3</div>
                     <div className="font-bold">7.9</div>
+                  </div>
+                  <div className="bg-white/30 rounded-lg p-2 text-center border border-white/30">
+                    <div className="text-xs opacity-80">מפגש 4</div>
+                    <div className="font-bold">10.9</div>
+                  </div>
+                  <div className="bg-white/30 rounded-lg p-2 text-center border border-white/30">
+                    <div className="text-xs opacity-80">מפגש 5</div>
+                    <div className="font-bold">14.9</div>
+                  </div>
+                  <div className="bg-white/30 rounded-lg p-2 text-center border border-white/30">
+                    <div className="text-xs opacity-80">מפגש 6</div>
+                    <div className="font-bold">17.9</div>
                   </div>
                 </div>
                 <div className="bg-white/40 rounded-lg p-2 text-center border border-white/40">
